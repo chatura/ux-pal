@@ -35,6 +35,10 @@
                 url: "/strategy",
                 templateUrl: '/components/strategy/strategy.html'
             })
+            .state('documentList', {
+                url: "/documentList",
+                templateUrl: '/components/documentList/documentList.html'
+            })
             .state('proto', {
                 url: "/proto",
                 templateUrl: '/components/prototype/prototype.html'

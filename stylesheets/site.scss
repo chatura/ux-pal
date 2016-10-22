@@ -33,7 +33,11 @@ html {
     float: right;
     margin: 12px 0 2px;
 }
-
+.navbar-brand {
+    width: 128px;
+    height: 51px;
+    background-image: url(../images/logo.png);
+}
 .container {
     height: 100%;
     &.main-container {
@@ -47,42 +51,75 @@ html {
                 margin-top: 45px;
             }
             .app-content {
-                background-color: #fff;
+                background-color: #f5f5f5;
                 height: 100%;
                 overflow-y: auto;
                 padding-bottom: 60px !important;
+
+                 h4 {
+                       margin: 30px 4px;
+                        font-size: 28px;
+                        font-weight: 700; 
+                    }
+                .documentlist-table {
+                   
+                    thead {
+
+                    }
+                    tbody {
+                        tr {
+                            height: 50px;
+                        }
+                        td {
+                                padding: 16px;
+                        }
+                    }
+
+                }
             }
             .app-sidebar {
-                padding: 20px;
-                background-color: #607d8b;
-                color: #fff;
-                height: 100%;
+                    padding: 20px;
+                    background-color: #ffffff;
+                    color: #676262;
+                    height: 100%;
                 .app-numbering {
                     counter-reset: my-badass-counter;
                     dt {
-                        padding-left: 60px;
-                        position: relative;
-                        font-weight: normal;
-                        margin-bottom: 20px;
+                           padding-left: 60px;
+                            position: relative;
+                            font-weight: normal;
+                            color: #637282;
+                            padding: 18px 0px 18px 60px;
+                            
+                      
                     }
                     dt:before {
                         content: counter(my-badass-counter);
                         counter-increment: my-badass-counter;
                         position: absolute;
                         left: 3px;
-                        top: 0;
+                            top: 20px;
                         font-size: 16px;
-                        border: 1px solid #ff1744;
-                        border-radius: 50px;
+                        border: 1px solid #e5e5e5;
+                        border-radius: 50px;    
                         width: 30px;
                         height: 30px;
                         padding: 3px 9px 0;
-                        background-color: #ff1744;
+                        background-color: #ffffff;
                     }
                 }
                 .app-numbering dt:before {
                     content: counter(my-badass-counter);
                     counter-increment: my-badass-counter;
+                }
+                h3 {
+                    color: #1b2733;
+                    margin-top: 14px;
+                    margin-bottom: 30px;
+                }
+                p {
+                        color: #637282;
+                        font-weight: 400;
                 }
             }
             .persona-template {
@@ -156,14 +193,14 @@ html {
                 background: red;
                 position: relative;
                 &.red {
-                    background: #d32f2f;
+                    background: #E91E63;
                     &:hover {
                         -webkit-transition: all 1s ease;
                         -moz-transition: all 1s ease;
                         -o-transition: all 1s ease;
                         -ms-transition: all 1s ease;
                         transition: all 1s ease;
-                        background-color: #ae2828;
+                        background-color: #AD1457;
                     }
                 }
                 &.purple {
@@ -200,9 +237,13 @@ html {
                 h1 {
                     text-align: center;
                     color: #ffffff;
-                    padding-top: 37%;
+
                     font-weight: 800;
                     font-size: 40px;
+
+                    &.message-from-us {
+                        
+                    }
                 }
                 p {
                     width: 50%;
