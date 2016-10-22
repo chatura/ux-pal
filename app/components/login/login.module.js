@@ -1,6 +1,6 @@
 (function () {
   'use strict';
 
-  angular.module('ux.getStart', []);
+  angular.module('ux.login', []);
 
 })();
